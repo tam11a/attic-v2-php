@@ -1,0 +1,101 @@
+.sidebar{
+    flex: 0.25;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #000;
+}
+.sidebar__header{
+    display: flex;
+    background-color: #d6d6d6;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: -2px 1px 5px #000;
+    cursor: pointer;
+    z-index: 2;
+}
+.AppName{
+    flex: 1;
+}
+.sidebar__body{
+    flex: 1;
+    overflow-y: auto;
+}
+.sidebar__profile{
+    background-color: #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.sidebar__profile i{
+    opacity: 0.7;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.sidebar__profile i:hover{
+    opacity: 1;
+    background: #00000011;
+}
+
+.profile__name{
+    flex: 1;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.profile__codeI{
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+.sidebar__body__header,
+.chat_window{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__body__header{
+    background-color: #d6d6d6;
+    padding: 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+.sidebar__body__header_createBtn{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__body__header > *{
+    padding: 10px;
+}
+.sidebar__body__header > *:hover{
+    background: #3333333d;
+    opacity: 1;
+}
+.sidebar__body__chats{
+    flex: 1;
+    padding: 5px;
+}
+.chat_window{
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chat_window .material-icons{
+    font-size: 1.4em;
+}
+.chat_window:hover{
+    opacity: 1;
+    background: #00000036;
+}
+.chat_win_channel_name{
+    flex: 1;
+}

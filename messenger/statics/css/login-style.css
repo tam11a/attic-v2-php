@@ -1,0 +1,64 @@
+.container{
+    display: unset;
+    background: #15171b;
+}
+
+.container form{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #00000034;
+    background: #33534028;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container form p{
+    margin: 10px;
+    text-align: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #6CC390;
+}
+input::placeholder{
+    color: #fff;
+}
+/*
+6CC390
+335340
+*/
+#btn{
+    border: none;
+    background: #6CC390;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn::placeholder{
+    color: #000;
+}
+.app-title{
+    font-size: 1.5em;
+    color: #6CC390;
+}
+.watermark{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(50%, -50%);
+    height: 100vh;
+    width: 100vh;
+    background: url('../image/Planet-X-logo.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}

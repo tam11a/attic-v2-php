@@ -1,0 +1,117 @@
+.sidebar__st{
+    flex: 0.25;
+    color: #333;
+    padding-top: 40px;
+    overflow: auto;
+}
+.mainscr__st{
+    flex: 0.60;
+    background: #fff;
+    overflow: auto;
+}
+.backBtn__st{
+    flex: 0.15;
+}
+.backBtn__st0{
+    flex: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+}
+i.backBtn__st0{
+    font-size: 3em;
+    padding: 10px;
+    background-color: #00000022;
+    border-radius: 50%;
+}
+.sidebar__st ul{
+    width: 70%;
+    padding: 10px;
+    border-bottom: 2px solid #33333373;
+    list-style: none;
+    right: 0;
+    margin: auto;
+    margin-right: 20px;
+}
+.sidebar__st ul li{
+    padding: 10px;
+}
+.sidebar__stHeader{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.sidebar__stOptions{
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sidebar__stOptions:hover{
+    background: #33333315;
+    color: #000;
+}
+.logoutBtn{
+    color: #8d0101;
+}
+.logoutBtn:hover{
+    background: #ff00001e;
+    color: #d30404;
+}
+.mainscr__child{
+    margin: 5%;
+    padding: 20px;
+    /* box-shadow: inset 0 0 10px #33333367;
+    background: #66666633; */
+    border-radius: 20px;
+    display: flex;
+    /* justify-content: center; */
+}
+.mainscr__child_p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainscr__child_p > *{
+    margin: 10px;
+    padding: 20px;
+}
+.mainscr__child_p > label{
+    width: 150px;
+    text-transform: uppercase;
+    border-right: 2px solid #000;
+    /* background: linear-gradient(#00000000, #33333322); */
+}
+.mainscr__child_p .showdata{
+    flex: 1;
+    /* background: #88888831;
+    box-shadow: 0 0 10px #3333339c; */
+    background: #d6d6d6;
+    border-radius: 10px;
+    color: #333;
+}
+.mainscr__updateImg i{
+    padding: 5px;
+    opacity: 0.7;
+    border-radius: 3px;
+}
+.mainscr__updateImg i:hover{
+    opacity: 1;
+    background: #00000022;
+}
+.mainscr__updateImg{
+    /* box-shadow: 0 0 10px #333333d2; */
+    background: #d6d6d6;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.mainscr__dp{
+    height: 100px;
+    width: 100px;
+}
+.mainscr__child_header{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}

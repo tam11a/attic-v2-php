@@ -1,0 +1,135 @@
+.chat__bar{
+    flex: 0.75;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.chat__bar__header{
+    display: flex;
+    flex-direction: row;
+    background-color: #d6d6d6;
+    box-shadow: 2px 1px 5px #000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.chat__bar__name{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.chat__bar__header i{
+    opacity: 0.7;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.chat__bar__header i:hover{
+    opacity: 1;
+    background: #00000011;
+}
+.chat__bar_body{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.chat__bar_msgs{
+    flex: 0.6;
+    height: calc(100vh - 50px);
+    background-color: #00000011;
+    box-shadow: inset 0 0 20px #00000055;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+.chat__bar_sidebar{
+    flex: 0.4;
+    /* transform: translateX(100%); */
+    position: relative;
+    background-color: #d6d6d6;
+    box-shadow: inset 2px 0 5px #000;
+    overflow: hidden;
+    transition: transform 1s,
+                flex 1s;
+}
+.chat__bar_sidebar_area{
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    overflow-y: auto;
+}
+.Csidebar_open{
+    transform: translateX(0);
+    transition: transform 1s,
+                flex 1s;
+}
+.sidebar_child_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.sidebar_child_header p{
+    flex: 1;
+    font-size: 1.2em;
+}
+.sidebar_child_header i{
+    opacity: 0.7;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 3px;
+}
+.sidebar_child_header i:hover{
+    opacity: 1;
+    background: #00000011;
+}
+.sidebar_child_p{
+    font-size: 0.8em;
+    padding: 5px;
+}
+.chat__bar_msgbox{
+    flex: 1;
+    margin: 0 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.chat__bar_sendbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+/*     
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    width: 40%; */
+}
+.chat__bar_sendbox span{
+    flex: 1;
+}
+.chat__bar_sendbox .material-icons{
+    font-size: 1.5em;
+    padding: 10px;
+}
+.writeBox{
+    background-color: transparent;
+    outline: none;
+}
+.TsendBtn{
+    border: none;
+    background: none;
+    outline: none;
+}

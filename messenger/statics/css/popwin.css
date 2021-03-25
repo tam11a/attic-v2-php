@@ -1,0 +1,96 @@
+.popupwin{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000085;
+    z-index: 1000000;
+}
+.onPop{
+    display: block;
+}
+.popupwin form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popupwin form input{
+    margin: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.popupwin form > input{
+    width: 350px;
+    padding: 10px;
+    background: #d6d6d6;
+    border-radius: 10px;
+}
+
+.popupwin form input[type="submit"]{
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popupwin form .frmBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.popupwin form .frmBtns > input{
+    width: 45%;
+    
+}
+.popHeader{
+    display: flex;
+    font-size: 1.2em;
+    padding: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.popHeader label{
+    flex: 1;
+}
+.searchOptionSuggestion{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -11px);
+    list-style: none;
+    padding: 5px;
+    background: #d6d6d6;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 200px;
+    width: 83%;
+}
+.searchOptionSuggestion > li{
+    height: 40px;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.searchOptionSuggestion > li:last-child{
+    border-bottom: none;
+}
+
+.searchOption:focus ~ .suggestionBox .searchOptionSuggestion{
+    display: block;
+}
