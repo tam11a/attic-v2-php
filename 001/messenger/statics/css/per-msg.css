@@ -1,0 +1,61 @@
+.per-msg{
+    display: flex;
+    flex-direction: row;   
+    margin: 10px;
+    position: relative;
+}
+.per-msg:last-child{
+    
+}
+
+.per-msg-icon{
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.per-msg-body{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #d6d6d698;
+    box-shadow: 0 0 5px #000;
+}
+.per-msg-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    border-bottom: 1px #000 solid;
+}
+.per-msg-header i{
+    font-size: 1.2em;
+}
+.per-msg-text{
+    font-size: 1.1em;
+    padding: 5px;
+}
+.per-msg-timestamp{
+    text-align: right;
+    font-size: 0.8em;
+    padding: 5px;
+}
+.msg-self{
+    position: relative;
+    top: 0;
+    left: 100%;
+    transform: translateX(-55%);
+}
+.msg-self .per-msg-body{
+    background-color: #fff;
+}
+.per-msg-img{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
